@@ -2,11 +2,15 @@ import React from "react";
 import Row from "./Row";
 
 function Table(props) {
-  return (
-    <div className="table">
-      <Row></Row>
-    </div>
-  );
+  function renderRows() {
+    let rows = [];
+    for (let i = 0; i < props.rows; i++) {
+      rows.push(<Row columns={props.columns}></Row>);
+    }
+    return rows;
+  }
+
+  return <div className="table">{renderRows()}</div>;
 }
 
 export default Table;

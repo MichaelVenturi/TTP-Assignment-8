@@ -1,6 +1,6 @@
 import React from "react";
 
-function Col() {
+function Col(props) {
   return <div className="col"></div>;
 }
 
