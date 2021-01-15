@@ -5,7 +5,12 @@ function Row(props) {
   function renderCols() {
     let cols = [];
     for (let i = 0; i < props.columns; i++) {
-      cols.push(<Col></Col>);
+      cols.push(
+        <Col
+          defaultColor={props.defaultColor}
+          selectedColor={props.selectedColor}
+        ></Col>
+      );
     }
     return cols;
   }

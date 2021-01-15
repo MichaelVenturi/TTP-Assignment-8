@@ -15,3 +15,10 @@
   border: 10px solid black;
   margin: 10px;
 }
+.options-field {
+  margin-top: 20px;
+}
+button {
+  padding: 10px;
+  margin: 5px;
+}
